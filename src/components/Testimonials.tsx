@@ -45,21 +45,21 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, name, role, avatarInde
 const Testimonials: React.FC = () => {
   const testimonials: TestimonialProps[] = [
     {
-      quote: "Goodhood has transformed our street from just houses to a real community. I've made lifelong friends and we've started so many great initiatives together.",
+      quote: "As a working parent of three kids, I was constantly juggling multiple apps and services. Goodloop has simplified my life by letting me book rides and childcare all in one place with people I actually trust.",
       name: "Sarah Johnson",
-      role: "Maple Street",
+      role: "Parent of three",
       avatarIndex: 1,
     },
     {
-      quote: "As a new resident, Goodhood helped me connect with neighbors instantly. The local recommendations were incredible and made me feel at home.",
+      quote: "I was looking for a way to earn extra income while caring for my own children. Goodloop lets me offer carpooling and childcare to my neighbors on my own schedule, and I've built wonderful connections in my community.",
       name: "Michael Chen",
-      role: "Oak Avenue",
+      role: "Stay-at-home parent",
       avatarIndex: 2,
     },
     {
-      quote: "Our neighborhood watch program became so much more effective when we moved it to Goodhood. Communication is seamless and everyone feels safer.",
+      quote: "Finding reliable transportation for my mother who doesn't speak English was always challenging. Now, I can connect with bilingual neighbors through Goodloop who help her get to appointments and social activities.",
       name: "Priya Patel",
-      role: "Willow Lane",
+      role: "Family caregiver",
       avatarIndex: 3,
     },
   ];
@@ -69,11 +69,11 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex rounded-full bg-goodhood-green-light px-3 py-1 text-sm text-goodhood-green-dark font-medium mb-4">
-            Success stories
+            Community stories
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Loved by neighbors everywhere</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Solving real challenges for families</h2>
           <p className="text-gray-600">
-            Hear from people who have transformed their neighborhoods with Goodhood.
+            Hear from people who are building stronger communities with Goodloop.
           </p>
         </div>
 

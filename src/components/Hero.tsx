@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { MapPin, Clock, Shield } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
@@ -8,21 +9,21 @@ const Hero: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 animate-fade-in">
           <div className="inline-flex rounded-full bg-goodhood-green-light px-3 py-1 text-sm text-goodhood-green-dark font-medium">
-            Your community awaits
+            Restoring the village every family needs
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Connect with your <span className="text-goodhood-green">neighborhood</span>
+            Your trusted <span className="text-goodhood-green">caregiving</span> network
           </h1>
           <p className="text-lg text-gray-600 md:pr-10">
-            Discover local events, share resources, and build relationships with people in your area. 
-            Goodhood makes it easy to create a thriving community.
+            Connect with verified neighbors for childcare, transportation, elder care, and more. 
+            All in one seamless, community-first platform.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
             <Button className="bg-goodhood-green hover:bg-goodhood-green-dark text-white px-8 py-6">
-              Join Goodhood
+              Join Waitlist
             </Button>
             <Button variant="outline" className="border-goodhood-green text-goodhood-green hover:bg-goodhood-green-light px-8 py-6">
-              See how it works
+              Learn More
             </Button>
           </div>
           <div className="pt-4">
@@ -34,7 +35,7 @@ const Hero: React.FC = () => {
                   </div>
                 ))}
               </span>
-              <span>Join 2,000+ neighbors already connected</span>
+              <span>Join 80% of surveyed parents who want a solution like Goodloop</span>
             </p>
           </div>
         </div>
@@ -46,23 +47,22 @@ const Hero: React.FC = () => {
               <div className="bg-white p-6 rounded-xl">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-14 h-14 rounded-xl bg-goodhood-green-light flex items-center justify-center shrink-0">
-                    <span className="text-goodhood-green text-2xl">🏡</span>
+                    <span className="text-goodhood-green text-2xl">🚗</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">Maple Street Cleanup</h3>
-                    <p className="text-sm text-muted-foreground">Tomorrow, 10:00 AM • 12 neighbors going</p>
+                    <h3 className="font-semibold text-lg">Soccer Practice Carpool</h3>
+                    <p className="text-sm text-muted-foreground">Today, 4:00 PM • 3 trusted neighbors available</p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
-                  Join your neighbors for our monthly street cleanup! 
-                  Bring gloves if you have them. Trash bags and refreshments provided.
+                  Need a ride for your child to soccer practice? Connect with verified neighbors who are already heading that way!
                 </p>
                 <div className="flex gap-2">
                   <Button variant="outline" size="sm" className="text-xs">
-                    Details
+                    View Details
                   </Button>
                   <Button size="sm" className="bg-goodhood-green text-xs">
-                    I'll be there!
+                    Book Now
                   </Button>
                 </div>
               </div>

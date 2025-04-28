@@ -13,8 +13,8 @@ const Newsletter: React.FC = () => {
     if (!email) return;
     
     toast({
-      title: "Thanks for subscribing!",
-      description: "You'll receive updates about Goodhood soon.",
+      title: "Thanks for your interest!",
+      description: "You've been added to our waitlist. We'll notify you when Goodloop launches in your area.",
     });
     
     setEmail("");
@@ -25,10 +25,10 @@ const Newsletter: React.FC = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to transform your neighborhood?
+            Ready to restore the village your family needs?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Join our newsletter to receive updates and learn when Goodhood launches in your area.
+            Join our waitlist to be notified when Goodloop launches in your area and be among the first to build your trusted network.
           </p>
           <form onSubmit={handleSubmit} className="max-w-md mx-auto">
             <div className="flex flex-col sm:flex-row gap-2">
@@ -43,7 +43,7 @@ const Newsletter: React.FC = () => {
                 type="submit" 
                 className="bg-white text-goodhood-green hover:bg-white/90"
               >
-                Subscribe
+                Join Waitlist
               </Button>
             </div>
           </form>

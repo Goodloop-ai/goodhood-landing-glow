@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
               <div className="h-8 w-8 rounded-lg bg-goodhood-green flex items-center justify-center">
                 <span className="text-white font-bold text-lg">G</span>
               </div>
-              <span className="text-xl font-bold">Goodhood</span>
+              <span className="text-xl font-bold">Goodloop</span>
             </div>
-            <p className="text-gray-600 mb-4">Building stronger communities, one neighborhood at a time.</p>
+            <p className="text-gray-600 mb-4">Creating the trusted village every family needs to thrive.</p>
             <div className="flex space-x-4">
               <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-goodhood-green">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
@@ -39,12 +39,12 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold text-lg mb-4">Product</h4>
+            <h4 className="font-semibold text-lg mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-gray-600 hover:text-goodhood-green">Features</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Pricing</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Security</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">FAQ</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Childcare</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Ridesharing</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Elder Support</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Group Activities</a></li>
             </ul>
           </div>
           
@@ -54,16 +54,16 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-600 hover:text-goodhood-green">About us</a></li>
               <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Blog</a></li>
               <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Careers</a></li>
-              <li><a href="#testimonials" className="text-gray-600 hover:text-goodhood-green">Testimonials</a></li>
+              <li><a href="#testimonials" className="text-gray-600 hover:text-goodhood-green">Community Stories</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold text-lg mb-4">Legal</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Privacy</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Terms</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Cookie policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Trust & Safety</a></li>
               <li><a href="#" className="text-gray-600 hover:text-goodhood-green">Contact us</a></li>
             </ul>
           </div>
@@ -71,10 +71,10 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-500">© 2025 Goodhood. All rights reserved.</p>
+            <p className="text-sm text-gray-500">© 2025 Goodloop. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <p className="text-sm text-gray-500">
-                Made with ❤️ for communities everywhere
+                Building trusted communities, one connection at a time.
               </p>
             </div>
           </div>

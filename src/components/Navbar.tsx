@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
           <div className="h-8 w-8 rounded-lg bg-goodhood-green flex items-center justify-center">
             <span className="text-white font-bold text-lg">G</span>
           </div>
-          <span className="text-xl font-bold">Goodhood</span>
+          <span className="text-xl font-bold">Goodloop</span>
         </div>
         <div className="hidden md:flex items-center space-x-6">
           <a href="#features" className="text-sm font-medium hover:text-goodhood-green transition-colors">
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
             How It Works
           </a>
           <a href="#testimonials" className="text-sm font-medium hover:text-goodhood-green transition-colors">
-            Testimonials
+            Community Stories
           </a>
         </div>
         <div className="flex items-center space-x-4">
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
             Log in
           </Button>
           <Button variant="default" size="sm" className="bg-goodhood-green hover:bg-goodhood-green-dark">
-            Get Started
+            Join Waitlist
           </Button>
         </div>
       </div>
