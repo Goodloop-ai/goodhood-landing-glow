@@ -21,8 +21,14 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <section className="section bg-sky-400">
-      <div className="container mx-auto">
+    <section className="section bg-gradient-to-br from-sky-400 to-sky-500 relative overflow-hidden">
+      {/* Abstract shapes for high-tech feel */}
+      <div className="absolute inset-0 overflow-hidden opacity-10">
+        <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-400 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to restore the village your family needs?
@@ -35,13 +41,14 @@ const Newsletter: React.FC = () => {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                className="bg-white/20 backdrop-blur-md border-white/30 text-white placeholder:text-white/60 focus:ring-2 focus:ring-white/50 focus:border-transparent"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <Button 
                 type="submit" 
-                className="bg-amber-400 text-white hover:bg-amber-500"
+                variant="default"
+                className="bg-amber-400 hover:bg-amber-500 text-white font-medium shadow-lg shadow-amber-500/20"
               >
                 Join Waitlist
               </Button>
