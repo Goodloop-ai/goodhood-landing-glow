@@ -19,7 +19,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, name, role, avatarInde
             width="16"
             height="16"
             viewBox="0 0 24 24"
-            fill="#5CBA99"
+            fill="#38BDF8"
             stroke="none"
           >
             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -28,8 +28,8 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, name, role, avatarInde
       </div>
       <p className="text-gray-700 mb-6 italic">"{quote}"</p>
       <div className="flex items-center">
-        <div className={`w-10 h-10 rounded-full bg-goodhood-green-light flex items-center justify-center mr-3`}>
-          <span className="text-goodhood-green font-bold">
+        <div className={`w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center mr-3`}>
+          <span className="text-amber-500 font-bold">
             {name.charAt(0)}
           </span>
         </div>
@@ -68,7 +68,7 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="section">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex rounded-full bg-goodhood-green-light px-3 py-1 text-sm text-goodhood-green-dark font-medium mb-4">
+          <div className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-sm text-sky-600 font-medium mb-4">
             Community stories
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Solving real challenges for families</h2>

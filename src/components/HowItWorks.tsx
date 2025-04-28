@@ -10,7 +10,7 @@ interface StepProps {
 const Step: React.FC<StepProps> = ({ number, title, description }) => {
   return (
     <div className="step-card">
-      <div className="absolute -top-4 -left-2 w-10 h-10 rounded-full bg-goodhood-blue flex items-center justify-center text-white font-bold">
+      <div className="absolute -top-4 -left-2 w-10 h-10 rounded-full bg-sky-400 flex items-center justify-center text-white font-bold">
         {number}
       </div>
       <div className="pt-8">
@@ -41,10 +41,10 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="section bg-goodhood-blue-light">
+    <section id="how-it-works" className="section bg-sky-50">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex rounded-full bg-white px-3 py-1 text-sm text-goodhood-blue font-medium mb-4">
+          <div className="inline-flex rounded-full bg-white px-3 py-1 text-sm text-sky-600 font-medium mb-4">
             Simple to use
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">How Goodloop works</h2>

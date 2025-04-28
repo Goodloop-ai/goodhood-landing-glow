@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 160 38% 55%;
+    --primary: 198 90% 60%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 160 38% 55%;
+    --ring: 198 90% 60%;
 
     --radius: 1rem;
 
@@ -83,14 +83,14 @@
 
 @layer components {
   .feature-card {
-    @apply rounded-2xl p-6 transition-all duration-300 bg-white shadow-sm hover:shadow-md border border-transparent hover:border-goodhood-green/20;
+    @apply rounded-2xl p-6 transition-all duration-300 bg-white shadow-sm hover:shadow-md border border-transparent hover:border-sky-400/20;
   }
   
   .testimonial-card {
-    @apply rounded-2xl p-6 bg-white shadow-md border border-goodhood-green/10;
+    @apply rounded-2xl p-6 bg-white shadow-md border border-sky-400/10;
   }
 
   .step-card {
-    @apply relative rounded-2xl p-6 bg-white shadow-md border border-goodhood-blue/10;
+    @apply relative rounded-2xl p-6 bg-white shadow-md border border-sky-400/10;
   }
 }

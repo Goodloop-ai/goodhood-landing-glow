@@ -21,7 +21,7 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <section className="section bg-goodhood-green">
+    <section className="section bg-sky-400">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -41,7 +41,7 @@ const Newsletter: React.FC = () => {
               />
               <Button 
                 type="submit" 
-                className="bg-white text-goodhood-green hover:bg-white/90"
+                className="bg-amber-400 text-white hover:bg-amber-500"
               >
                 Join Waitlist
               </Button>

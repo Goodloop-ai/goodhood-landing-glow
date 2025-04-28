@@ -8,21 +8,21 @@ const Hero: React.FC = () => {
     <section className="container mx-auto py-16 md:py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 animate-fade-in">
-          <div className="inline-flex rounded-full bg-goodhood-green-light px-3 py-1 text-sm text-goodhood-green-dark font-medium">
+          <div className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm text-amber-600 font-medium">
             Restoring the village every family needs
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Your trusted <span className="text-goodhood-green">caregiving</span> network
+            Your trusted <span className="text-sky-400">caregiving</span> network
           </h1>
           <p className="text-lg text-gray-600 md:pr-10">
             Connect with verified neighbors for childcare, transportation, elder care, and more. 
             All in one seamless, community-first platform.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <Button className="bg-goodhood-green hover:bg-goodhood-green-dark text-white px-8 py-6">
+            <Button className="bg-sky-400 hover:bg-sky-500 text-white px-8 py-6">
               Join Waitlist
             </Button>
-            <Button variant="outline" className="border-goodhood-green text-goodhood-green hover:bg-goodhood-green-light px-8 py-6">
+            <Button variant="outline" className="border-sky-400 text-sky-400 hover:bg-sky-50 px-8 py-6">
               Learn More
             </Button>
           </div>
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             <p className="text-sm text-muted-foreground flex items-center gap-2">
               <span className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className={`w-6 h-6 rounded-full border-2 border-white bg-goodhood-green-light`}>
+                  <div key={i} className={`w-6 h-6 rounded-full border-2 border-white bg-amber-100`}>
                     <span className="sr-only">User avatar</span>
                   </div>
                 ))}
@@ -41,13 +41,13 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="relative animate-fade-in-right">
-          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-goodhood-green-light rounded-full opacity-70 blur-3xl"></div>
-          <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden border border-goodhood-green/10">
-            <div className="p-1 bg-gradient-to-r from-goodhood-green-light to-goodhood-blue-light">
+          <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-sky-100 rounded-full opacity-70 blur-3xl"></div>
+          <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden border border-sky-100">
+            <div className="p-1 bg-gradient-to-r from-amber-100 to-sky-100">
               <div className="bg-white p-6 rounded-xl">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-goodhood-green-light flex items-center justify-center shrink-0">
-                    <span className="text-goodhood-green text-2xl">🚗</span>
+                  <div className="w-14 h-14 rounded-xl bg-sky-100 flex items-center justify-center shrink-0">
+                    <span className="text-sky-400 text-2xl">🚗</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Soccer Practice Carpool</h3>
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                   <Button variant="outline" size="sm" className="text-xs">
                     View Details
                   </Button>
-                  <Button size="sm" className="bg-goodhood-green text-xs">
+                  <Button size="sm" className="bg-sky-400 text-xs hover:bg-sky-500">
                     Book Now
                   </Button>
                 </div>

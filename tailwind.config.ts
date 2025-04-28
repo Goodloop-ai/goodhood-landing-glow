@@ -63,14 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				goodhood: {
-					green: "#5CBA99",
-					"green-light": "#E6F5EF",
-					"green-dark": "#3A9E7B",
-					blue: "#55B4D4",
-					"blue-light": "#EBF6FA",
-					orange: "#F97316",
-					"orange-light": "#FFEDD5",
+				goodloop: {
+					blue: "#38BDF8",
+					"blue-light": "#E0F2FE",
+					"blue-dark": "#0EA5E9",
+					amber: "#FBBF24",
+					"amber-light": "#FEF3C7",
+					"amber-dark": "#F59E0B",
 					neutral: "#8E9196",
 					"neutral-light": "#F5F5F5"
 				}
