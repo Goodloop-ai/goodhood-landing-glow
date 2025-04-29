@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Shield } from "lucide-react";
@@ -9,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 animate-fade-in">
           <div className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm text-amber-600 font-medium">
-            Restoring the village every family needs
+            Empowering families by rebuilding trusted networks
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             Your trusted <span className="text-sky-400">caregiving</span> network
