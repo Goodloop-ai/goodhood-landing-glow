@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Check } from "lucide-react";
 
 interface TestimonialProps {
   quote: string;
@@ -10,10 +11,13 @@ interface TestimonialProps {
 
 const Testimonial: React.FC<TestimonialProps> = ({ quote, name, role, avatarIndex }) => {
   return (
-    <div className="testimonial-card">
+    <div className="testimonial-card group hover:-translate-y-1 transition-all">
+      <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-amber-400 rounded-full w-8 h-8 flex items-center justify-center transform rotate-12 opacity-0 group-hover:opacity-100 transition-all">
+        <Check className="text-white" size={16} />
+      </div>
       <p className="text-gray-700 mb-6 italic">"{quote}"</p>
       <div className="flex items-center">
-        <div className={`w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center mr-3`}>
+        <div className={`w-10 h-10 rounded-full bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center mr-3 shadow-sm`}>
           <span className="text-amber-500 font-bold">
             {name.charAt(0)}
           </span>
@@ -50,9 +54,9 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section id="testimonials" className="section">
+    <section id="testimonials" className="section bg-gradient-to-b from-white to-sky-50 py-20">
       <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-sm text-sky-600 font-medium mb-4">
             Community stories
           </div>
@@ -62,7 +66,7 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Testimonial
               key={index}
