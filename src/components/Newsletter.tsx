@@ -21,7 +21,7 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <section className="section bg-gradient-to-br from-sky-400 to-sky-500 relative overflow-hidden">
+    <section id="waitlist" className="section bg-gradient-to-br from-sky-400 to-sky-500 relative overflow-hidden">
       {/* Abstract shapes for high-tech feel */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
         <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full blur-3xl"></div>
@@ -31,7 +31,7 @@ const Newsletter: React.FC = () => {
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to restore the village your family needs?
+            Ready to build the village your family needs?
           </h2>
           <p className="text-white/90 text-lg mb-8">
             Join our waitlist to be notified when Goodloop launches in your area and be among the first to build your trusted network.

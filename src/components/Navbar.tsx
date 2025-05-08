@@ -6,6 +6,14 @@ import { Infinity, Menu, X } from "lucide-react";
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
+  const scrollToWaitlist = () => {
+    const waitlistSection = document.getElementById('waitlist');
+    if (waitlistSection) {
+      waitlistSection.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+  
   return (
     <nav className="border-b border-gray-100 py-4 backdrop-blur-md bg-white/80 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
@@ -42,6 +50,7 @@ const Navbar: React.FC = () => {
             variant="default" 
             size="sm" 
             className="bg-gradient-to-r from-sky-400 to-sky-500 hover:from-sky-500 hover:to-sky-600 text-white shadow-md shadow-sky-200/50 hover:shadow-lg hover:shadow-sky-300/50 transition-all"
+            onClick={scrollToWaitlist}
           >
             Join Waitlist
           </Button>
@@ -71,6 +80,13 @@ const Navbar: React.FC = () => {
             </a>
             <Button variant="ghost" className="justify-start" onClick={() => setIsMenuOpen(false)}>
               Log in
+            </Button>
+            <Button 
+              variant="default" 
+              className="justify-start bg-gradient-to-r from-sky-400 to-sky-500" 
+              onClick={scrollToWaitlist}
+            >
+              Join Waitlist
             </Button>
           </div>
         </div>
