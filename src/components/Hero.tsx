@@ -1,8 +1,16 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Shield } from "lucide-react";
 
 const Hero: React.FC = () => {
+  const scrollToWaitlist = () => {
+    const waitlistSection = document.getElementById('waitlist');
+    if (waitlistSection) {
+      waitlistSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="container mx-auto py-16 md:py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -18,7 +26,10 @@ const Hero: React.FC = () => {
             All in one seamless, community-first platform.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <Button className="bg-sky-400 hover:bg-sky-500 text-white px-8 py-6">
+            <Button 
+              className="bg-sky-400 hover:bg-sky-500 text-white px-8 py-6"
+              onClick={scrollToWaitlist}
+            >
               Join Waitlist
             </Button>
             <Button variant="outline" className="border-sky-400 text-sky-400 hover:bg-sky-50 px-8 py-6">
