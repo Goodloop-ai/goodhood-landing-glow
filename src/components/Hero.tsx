@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Clock, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
             <Button className="bg-sky-400 hover:bg-sky-500 text-white px-8 py-6">
-              Join Waitlist
+              <Link to={'/newsletter'}>Join Waitlist</Link>
             </Button>
             <Button variant="outline" className="border-sky-400 text-sky-400 hover:bg-sky-50 px-8 py-6">
               Learn More
             </Button>
           </div>
           <div className="pt-4">
-            <p className="text-sm text-muted-foreground flex items-center gap-2">
+            <div className="text-sm text-muted-foreground flex items-center gap-2">
               <span className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className={`w-6 h-6 rounded-full border-2 border-white bg-amber-100`}>
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                 ))}
               </span>
               <span>Join 80% of surveyed parents who want a solution like Goodloop</span>
-            </p>
+            </div>
           </div>
         </div>
 
