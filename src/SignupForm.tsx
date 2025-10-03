@@ -4,6 +4,7 @@ export default function SignupForm() {
   const [emailInput, setEmailInput] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [zipcodeInput, setZipcodeInput] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
@@ -13,12 +14,23 @@ export default function SignupForm() {
     setEmailInput("");
     setNameInput("");
     setZipcodeInput("");
+    setStatus("Added!");
+
+    setTimeout(() => setStatus(""), 2000);
   }
 
-  return <form className="signup-form" onSubmit={handleSubmit}>
-    <input required name="name" value={nameInput} type="text" placeholder='Name' onChange={(e) => setNameInput(e.target.value)} />
-    <input required name="zipcode" value={zipcodeInput} type="zipcode" placeholder='Zip code' onChange={(e) => setZipcodeInput(e.target.value)} />
-    <input required name="email" value={emailInput} type="email" placeholder='Email' onChange={(e) => setEmailInput(e.target.value)} />
-    <button className="bg-sky-400 submit-btn" type="submit">Get notified</button>
-  </form>
+  return <div>
+    <form className="signup-form" onSubmit={handleSubmit}>
+      <input required name="name" value={nameInput} type="text" placeholder='Name' onChange={(e) => setNameInput(e.target.value)} />
+      <input required name="zipcode" value={zipcodeInput} type="zipcode" placeholder='Zip code' onChange={(e) => setZipcodeInput(e.target.value)} />
+      <input required name="email" value={emailInput} type="email" placeholder='Email' onChange={(e) => setEmailInput(e.target.value)} />
+      <button className="bg-sky-400 submit-btn" type="submit">Get notified</button>
+    </form>
+    <p className='h-5 mt-3'>
+      {
+        status
+      }
+    </p>
+  </div>
+  
 }
