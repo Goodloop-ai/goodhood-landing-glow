@@ -1,9 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   color: #0D0D0D;
+  padding-bottom: 2rem;
 }
 
 .logo-text {
@@ -12,9 +12,43 @@
   font-weight: 700;
 }
 
+.mockup {
+  border-radius: .5rem;
+  background: linear-gradient(to bottom, white 60%, transparent);
+  width: 15.625rem;
+  height: 33rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.mockup img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.mockbtn {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  border-radius: 50%;
+  left: 50%;
+  top: 26.4rem;
+  transform: translate(-50%);
+}
+
+.mockbtn::after {
+  content: '+';
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 100;
+  top: -1rem;
+  left: .625rem;
+}
+
 .hero {
   position: relative;
-  padding-top: 3rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,18 +67,18 @@
   font-size: 1.5rem;
   font-weight: 400;
   max-width: 43.75rem;
+  text-align: center;
 }
 
 .hero .bg-blur {
   z-index: -1;
   position: absolute;
-  border: 1px solid red;
-  height: 70vh;
-  width: 43.75rem;
+  height: 500px;
+  width: 800px;
   top: 35%;
   background: linear-gradient(90deg, rgba(254, 243, 199, 0.60) 0%, #E0F2FE 100%);
   border-radius: 100%;
-  filter: blur(6.25rem);
+  filter: blur(90px);
 }
 
 .pill {
@@ -53,14 +87,6 @@
   padding: .5rem 1rem;
   background: rgba(243, 240, 231, 0.30);
   text-align: center;
-}
-
-.mockup {
-  border: 1px solid black;
-  border-radius: .5rem;
-  background-color: white;
-  width: 15.625rem;
-  height: 33.87rem;
 }
 
 .signup-form {
@@ -95,10 +121,11 @@ h3 {
 }
 
 .sign-up-section {
-  background-color: rgba(217.86, 243.59, 255, 0.60);
+  background-color: #F6F9FB;
   padding: 6rem;
   border-radius: 1.5rem;
   max-width: 43.75rem;
+  margin-top: 6rem;
 }
 
 .sign-up-section p {
@@ -118,10 +145,149 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  z-index: 1;
+  width: 100%;
 }
 
 .services > p {
   color: #7D7D7D;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.service-card-list {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card-header {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  grid-template-rows: 1fr;
+  text-align: left;
+  gap: 1rem;
+}
+
+.service-card-emoji {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.values {
+  padding: 6rem 0;
+  width: 100%;
+}
+
+.values ul {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.values li {
+  color: #1F2937;
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 16.875rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.value-list-item-icon-container {
+  height: 4rem;
+  width: 4rem;
+  border-radius: .5rem;
+  margin-bottom: 1.2rem;
+  background-color: #E0F2FE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-list-item-icon {
+  object-fit: contain;
+  height: 50%;
+}
+
+.quotes-section {
+  width: 100%;
+  background: linear-gradient(180deg, white 0%, #F0F9FF 80%, white 100%);
+  padding: 6rem 5rem;
+}
+
+.quotes-section p {
+  color: #7D7D7D;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.quotes-container {
+  display: grid;
+  grid-template-columns: 1fr 10rem 1fr 10rem 1fr;
+  grid-template-rows: repeat(1fr, 3);
+  gap: 2.25rem;
+  margin-bottom: 4rem;
+}
+
+.quotes-container i {
+  font-size: 1.25rem;
+  box-shadow: 0px 2px 36px rgba(31, 41, 55, 0.11);
+  padding: 1.5rem;
+  text-align: left;
+  background-color: white;
+}
+
+.quote-1 {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.quote-2 {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.quote-3 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+@media (max-width: 780px) {
+  .quotes-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .sign-up-section {
+    border-radius: 0;
+  }  
 }
