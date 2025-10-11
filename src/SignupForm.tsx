@@ -40,8 +40,10 @@ export default function SignupForm() {
   }
 
   return <form className="signup-form" onSubmit={handleSubmit}>
-    <input required name="name" value={nameInput} type="text" placeholder='Name' onChange={(e) => setNameInput(e.target.value)} />
-    <input required name="zipcode" value={zipcodeInput} type="tel" pattern="[0-9]*" placeholder="Zip code" max="99999" onChange={(e) => setZipcodeInput(e.target.value)} />
+    <div className='name-zipcode'>
+      <input required name="name" value={nameInput} type="text" placeholder='Name' onChange={(e) => setNameInput(e.target.value)} />
+      <input required name="zipcode" value={zipcodeInput} type="tel" pattern="[0-9]*" placeholder="Zip code" max="99999" onChange={(e) => setZipcodeInput(e.target.value)} />
+    </div>
     <input required name="email" value={emailInput} type="email" placeholder='Email' onChange={(e) => setEmailInput(e.target.value)} />
     <button className="bg-sky-400 submit-btn" type="submit">Get notified</button>
   </form>

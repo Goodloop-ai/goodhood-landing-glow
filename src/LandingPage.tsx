@@ -1,5 +1,9 @@
 import SignupForm from './SignupForm';
 import GoodloopLogo from './assets/goodloop_logo.svg';
+// import stairwayIcon from './assets/cellar.svg';
+// import faceIcon from './assets/emoji.svg';
+// import shieldIcon from './assets/shield.svg';
+// import peopleIcon from './assets/people.svg';
 import conesSrc from "./assets/cones.png";
 import familySrc from "./assets/family.png";
 import shieldSrc from './assets/shield.png';
@@ -61,7 +65,7 @@ const ServiceCard = ({ emoji, title, subtitle, description }: ServiceCardProps) 
 
   return (
     <div className='flex flex-col w-full max-w-sm bg-gradient-to-r from-yellow-100 to-sky-100 rounded-xl p-[2px]'>
-    <div className='bg-white rounded-xl border border-gray-200 p-6 flex flex-col gap-6 flex-grow'>
+    <div className='bg-white rounded-xl border border-gray-200 p-5 flex flex-col gap-3'>
       <div className='service-card-header'>
         <div className="service-card-emoji bg-sky-100">{emoji}</div>
         <div className='service-card-header-content'>
@@ -162,7 +166,7 @@ const QuotesSection = () => {
     </div>
     <h2 className="text-5xl font-light text-gray-800 pb-3">Sound familiar?</h2>
     <p>
-      Work-life balance is hard. Parents need trusted backup when plans shift. <br/>
+      Work-life balance is hard. <br/> Parents need trusted backup when plans shift.<br/>
       Goodloop is building a modern solution for families who want to grow their networks of support.
     </p>
   </section>
