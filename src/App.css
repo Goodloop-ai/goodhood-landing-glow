@@ -3,7 +3,6 @@
   margin: 0 auto;
   text-align: center;
   color: #0D0D0D;
-  padding-bottom: 2rem;
 }
 
 .logo-text {
@@ -14,9 +13,9 @@
 
 .mockup {
   border-radius: .5rem;
-  background: linear-gradient(to bottom, white 60%, transparent);
+  background: linear-gradient(to bottom, white 85%, transparent);
   width: 15.625rem;
-  height: 33rem;
+  height: 30rem;
   padding: 1rem;
   position: relative;
 }
@@ -33,7 +32,7 @@
   color: white;
   border-radius: 50%;
   left: 50%;
-  top: 26.4rem;
+  top: 80%;
   transform: translate(-50%);
 }
 
@@ -48,13 +47,14 @@
 
 .hero {
   position: relative;
-  padding: 3rem;
+  padding: 0 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   z-index: 1;
+  max-width: 43.75rem;
 }
 
 .hero h1 {
@@ -66,16 +66,15 @@
   color: #7D7D7D;
   font-size: 1.5rem;
   font-weight: 400;
-  max-width: 43.75rem;
   text-align: center;
 }
 
 .hero .bg-blur {
   z-index: -1;
   position: absolute;
-  height: 800px;
-  width: 800px;
-  top: 40%;
+  height: 60%;
+  width: 100%;
+  top: 30%;
   background: linear-gradient(90deg, rgba(254, 243, 199, 0.60) 0%, #E0F2FE 100%);
   border-radius: 100%;
   filter: blur(90px);
@@ -90,27 +89,30 @@
 }
 
 .signup-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
 }
 
 .signup-form input {
   background-color: white;
   border-radius: .5rem;
   border: .15rem solid #2222221A;
-  padding-left: 1rem
+  padding-left: 1rem;
+  height: 3rem;
 }
 
-.signup-form input[name="email"] {
-  grid-row: 2 / 3;
-  grid-column: 1 / 3;
+.name-zipcode {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-zipcode input {
+  width: 50%;
 }
 
 .signup-form button {
-  grid-row: 3 / 4;
-  grid-column: 1 / 3;
   color: white;
 }
 
@@ -125,7 +127,6 @@ h3 {
   padding: 6rem;
   border-radius: 1.5rem;
   max-width: 43.75rem;
-  margin-top: 6rem;
 }
 
 .sign-up-section p {
@@ -141,7 +142,7 @@ footer {
 }
 
 .services {
-  margin: 3rem 0 5rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -183,7 +184,7 @@ footer {
 }
 
 .values {
-  padding: 6rem 0;
+  padding-top: 3rem;
   width: 100%;
 }
 
@@ -226,13 +227,16 @@ footer {
   width: 100%;
   background: linear-gradient(180deg, white 0%, #F0F9FF 80%, white 100%);
   padding: 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quotes-section p {
   color: #7D7D7D;
   font-size: 1.5rem;
   font-weight: 400;
-  text-align: center;
+  max-width: 43.75rem;
 }
 
 .quotes-container {
@@ -281,6 +285,10 @@ footer {
     flex-direction: column;
   }
 
+  .quotes-section {
+    padding: 2rem;
+  }
+
   footer {
     flex-direction: column;
   }
@@ -289,5 +297,11 @@ footer {
 @media (max-width: 700px) {
   .sign-up-section {
     border-radius: 0;
+    padding: 2.5rem 2rem 3rem;
   }  
+
+  .service-card-list {
+    padding: 0 1rem;
+  }
 }
+
