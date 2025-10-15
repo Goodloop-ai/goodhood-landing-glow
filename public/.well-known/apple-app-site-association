@@ -7,5 +7,11 @@
         "paths": ["/*"]
       }
     ]
+  },
+  "activitycontinuation": {
+    "apps": ["K25XVHP83R.com.austinli.goodloop"]
+  },
+  "webcredentials": {
+    "apps": ["K25XVHP83R.com.austinli.goodloop"]
   }
 }
