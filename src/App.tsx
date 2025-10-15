@@ -47,24 +47,53 @@ interface NavigatorUAData extends UALowEntropyJSON {
 
 const App = () => {
 
-  const [browserInfo, setBrowserInfo] = useState<NavigatorUAData | null>(null); 
+  const [browserInfo, setBrowserInfo] = useState<{type: string; mobile: boolean;} | null>(null); 
 
   async function getBrowserInfo() {
-    const navig = window.navigator as Navigator;
-    if (navig.userAgentData) {
-      const uaData = navig.userAgentData;
-      console.log("Brand:", uaData.brands); // Array of browser brands and versions
-      console.log("Mobile:", uaData.mobile); // Boolean indicating mobile device
-      console.log("Platform:", uaData.platform); // Operating system
+    // const navig = window.navigator as Navigator;
+    // if (navig.userAgentData) {
+    //   const uaData = navig.userAgentData;
+    //   console.log("Brand:", uaData.brands); // Array of browser brands and versions
+    //   console.log("Mobile:", uaData.mobile); // Boolean indicating mobile device
+    //   console.log("Platform:", uaData.platform); // Operating system
 
-      alert(JSON.stringify(uaData));
+    //   alert(JSON.stringify(uaData));
 
-      setBrowserInfo(uaData);
+    //   setBrowserInfo(uaData);
+    // } else {
+    //   console.log("User-Agent Client Hints API not supported.");
+
+    //   alert("User-Agent Client Hints API not supported.");
+    // }
+
+    const userAgent = navigator.userAgent;
+
+    let type = "";
+
+    if (userAgent.includes("Chrome") && !userAgent.includes("Edg")) {
+      // console.log("Browser is Chrome");
+      type = "Chrome";
+    } else if (userAgent.includes("Firefox")) {
+      // console.log("Firefox");
+      type = "Firefox";
+    } else if (userAgent.includes("Edg")) {
+      // console.log("Edge");
+      type = "Edge";
+    } else if (userAgent.includes("Safari") && !userAgent.includes("Chrome")) {
+      // console.log("Safari");
+      type = "Safari";
+    } else if (userAgent.includes("Opera") || userAgent.includes("OPR")) {
+      // console.log("Opera");
+      type = "Opera";
     } else {
-      console.log("User-Agent Client Hints API not supported.");
-
-      alert("User-Agent Client Hints API not supported.");
+      // console.log("Browser type unknown or other");
+      type = "Browser type unknown or other";
     }
+
+    const mobile = navigator.maxTouchPoints > 1;
+    setBrowserInfo({ type, mobile });
+
+    alert(`type: ${type}, is mobile: ${mobile}`);
   }
 
   useEffect(() => {
