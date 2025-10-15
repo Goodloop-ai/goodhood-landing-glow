@@ -57,6 +57,8 @@ const App = () => {
       console.log("Mobile:", uaData.mobile); // Boolean indicating mobile device
       console.log("Platform:", uaData.platform); // Operating system
 
+      alert(JSON.stringify(uaData));
+
       setBrowserInfo(uaData);
     } else {
       console.log("User-Agent Client Hints API not supported.");
