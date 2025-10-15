@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "K25XVHP83R.com.austinli.goodloop",
-        "paths": ["/app/*"]
+        "paths": ["/index/*"]
       }
     ]
   },
