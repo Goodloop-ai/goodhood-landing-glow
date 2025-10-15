@@ -62,6 +62,8 @@ const App = () => {
       setBrowserInfo(uaData);
     } else {
       console.log("User-Agent Client Hints API not supported.");
+
+      alert("User-Agent Client Hints API not supported.");
     }
   }
 
