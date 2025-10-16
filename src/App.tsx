@@ -1,6 +1,7 @@
 import LandingPage from "./LandingPage";
 import './App.css';
 import { useEffect, useState } from "react";
+import ToAppPopup from "./components/ToAppPopup";
 
 type BrowserInfo = {
   type: string; 
@@ -27,30 +28,19 @@ const App = () => {
       type = "unknown or other";
     }
 
-    setBrowserInfo({ type, mobile: navigator.maxTouchPoints > 1 });
+    const info = { type, mobile: navigator.maxTouchPoints > 1 };
+
+    setBrowserInfo(info);
   }
 
   useEffect(() => {
     getBrowserInfo();
   }, [])
 
-  const navToApp = async () => {
-
-    const shareData = {
-      title: "Test title",
-      text: "test text",
-      url: "goodloop://",
-    };
-
-    try {
-      await navigator.share(shareData);
-      console.log("Shared successfully");
-    } catch (err) {
-      console.error(`Error: ${err}`);
-    }
-  }
-
   return <>
+  {
+    browserInfo && browserInfo.mobile === true && <ToAppPopup />
+  }
    <LandingPage />
   </>
 }
