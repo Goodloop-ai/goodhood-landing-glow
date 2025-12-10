@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Soccer Practice Carpool</h3>
-                    <p className="text-sm text-muted-foreground">Today, 4:00 PM • 3 trusted neighbors available</p>
+                    <p className="text-sm text-muted-foreground">Today, 4:00 PM • 3 trusted care-drivers available</p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
