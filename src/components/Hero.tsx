@@ -19,11 +19,10 @@ const Hero: React.FC = () => {
             Empowering families by rebuilding trusted networks
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Your trusted <span className="text-sky-400">caregiving</span> network
+            Parents Deserve Support, Not Stress—<span className="text-sky-400">Support That Moves Families Forward</span>
           </h1>
           <p className="text-lg text-gray-600 md:pr-10">
-            Connect with verified neighbors for childcare, transportation, elder care, and more. 
-            All in one seamless, community-first platform.
+            Work and family shouldn't be a tradeoff. Goodloop helps you save time and reduce stress by connecting you with trusted friends and reliable care-drivers for carpools, kids' rides, and daily family needs.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
             <Button 
