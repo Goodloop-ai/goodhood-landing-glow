@@ -19,15 +19,15 @@ const HeroSection = () => (
   <section className="hero">
 
     <div className="pill">Coming soon to iOS & Android</div>
-    <h1>Find your network, thrive together</h1>
+    <h1>Parents deserve support, not stress</h1>
 
     <div className='bg-blur'/>
 
-    <p>
-      Work and family shouldn't be a tradeoff. 
-      Goodloop helps you save time and stress less by connecting you with trusted friends and neighbors for carpools and logistic challenges.
+    <p className='large-text'>
+      Support that moves families forward.
+      Work and family shouldn't be a tradeoff. Goodloop helps you save time and reduce stress by connecting you with trusted friends and reliable care-drivers for carpools, kids' rides, and daily family needs.
     </p>
-    <p>
+    <p className='large-text'>
       Join our waitlist to be the first to try our services.
     </p>
     <SignupForm />
@@ -79,13 +79,13 @@ const ServicesSection = () => (
       <ServiceCard
         emoji="🏫"
         title="School Carpool"
-        subtitle="Today, 3:00 PM | 3 trusted neighbors available"
+        subtitle="Today, 3:00 PM | 3 trusted care-drivers available"
         description="Running late? Your circle has pickup covered."
       />
       <ServiceCard
         emoji="⚽️"
-        title="Dancing Class Carpool"
-        subtitle="Today, 5:00 PM | 3 trusted neighbors available"
+        title="Soccer Practice Carpool"
+        subtitle="Today, 5:00 PM | 3 trusted care-drivers available"
         description="Practice made easy with trusted parents."
       />
       <ServiceCard
@@ -97,6 +97,49 @@ const ServicesSection = () => (
     </div>
   </section>
 );
+
+const TrustBar = () => {
+  return <section className='trust-bar'>
+    <div className='trust-bar-text'>
+      <p className='large-text'>
+        Goodloop is the only family community platform that partners exclusively with top-tier, pre-vetted student transportation providers.
+      </p>
+      <p className='large-text'>
+        Every ride meets these non-negotiable safety standards:
+      </p>
+    </div>
+    
+    <ul className="trust-bar-list">
+      {
+        [
+          {
+            iconUrl: "/trustbar/document-lock-outline.svg",
+            caption: "FERPA Compliant"
+          },
+          {
+            iconUrl: "/trustbar/happy-outline.svg",
+            caption: "COPPA Safe"
+          },
+          {
+            iconUrl: "/trustbar/thumbs-up-outline.svg",
+            caption: "5+ years caregiving experience"
+          },
+          {
+            iconUrl: "/trustbar/finger-print-outline.svg",
+            caption: "Fingerprint driver screening & ongoing monitoring"
+          },
+          {
+            iconUrl: "/trustbar/umbrella-outline.svg",
+            caption: "Over $1 million insurance"
+          }
+        ].map((tile, index) => <li className="trust-bar-list-item" key={index}>
+          <img src={tile.iconUrl} alt={tile.caption} className="trust-bar-icon" />
+          <p>{tile.caption}</p>
+        </li>)
+      }
+    </ul>
+  </section>
+}
 
 type Value = {
   text: string;
@@ -145,8 +188,7 @@ const QuotesSection = () => {
   return <section className='quotes-section'>
     <div className="quotes-container">
       <i className="quote-1">"My meeting is running late, but I need to pickup my kid.”</i>
-      <i className="quote-2">"I want to help other parents, but I need a simple way to connect."</i>
-      <i className="quote-3">"Driving in five directions at once isn't sustainable. There must a better way."</i>
+      <i className="quote-2">"Driving in five directions at once isn't sustainable. There must a better way."</i>
     </div>
     <h2 className="text-5xl font-light text-gray-800 pb-3">Sound familiar?</h2>
     <p>
@@ -182,6 +224,7 @@ export default function LandingPage() {
         <HeaderLogo />
         <HeroSection />
         <ServicesSection />
+        <TrustBar />
         <ValuesSection />
         <QuotesSection />
         <SignupFormSection />
