@@ -24,7 +24,6 @@ const HeroSection = () => (
     <div className='bg-blur'/>
 
     <p className='large-text'>
-      Support that moves families forward.
       Work and family shouldn't be a tradeoff. Goodloop helps you save time and reduce stress by connecting you with trusted friends and reliable care-drivers for carpools, kids' rides, and daily family needs.
     </p>
     <p className='large-text'>
@@ -80,13 +79,13 @@ const ServicesSection = () => (
         emoji="🏫"
         title="School Carpool"
         subtitle="Today, 3:00 PM | 3 trusted care-drivers available"
-        description="Running late? Your circle has pickup covered."
+        description="Running late? Goodloop has pickup covered."
       />
       <ServiceCard
         emoji="⚽️"
         title="Soccer Practice Carpool"
         subtitle="Today, 5:00 PM | 3 trusted care-drivers available"
-        description="Practice made easy with trusted parents."
+        description="Practice made easy with trusted care-drivers."
       />
       <ServiceCard
         emoji="🩰"
@@ -109,7 +108,7 @@ const TrustBar = () => {
       </p>
     </div>
     
-    <ul className="trust-bar-list">
+    <ul className="trust-bar-list flex flex-wrap">
       {
         [
           {
@@ -224,7 +223,7 @@ export default function LandingPage() {
         <HeaderLogo />
         <HeroSection />
         <ServicesSection />
-        <TrustBar />
+        {/* <TrustBar /> */}
         <ValuesSection />
         <QuotesSection />
         <SignupFormSection />
