@@ -243,6 +243,7 @@ footer {
   flex-direction: column;
   gap: 20px;
   max-width: 44rem;
+  padding: 0 2rem;
 }
 
 .trust-bar-list {
