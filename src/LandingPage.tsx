@@ -108,7 +108,7 @@ const TrustBar = () => {
       </p>
     </div>
     
-    <ul className="trust-bar-list flex flex-wrap">
+    <ul className="flex flex-wrap">
       {
         [
           {
@@ -223,7 +223,7 @@ export default function LandingPage() {
         <HeaderLogo />
         <HeroSection />
         <ServicesSection />
-        {/* <TrustBar /> */}
+        <TrustBar />
         <ValuesSection />
         <QuotesSection />
         <SignupFormSection />
