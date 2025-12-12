@@ -3,6 +3,8 @@
   margin: 0 auto;
   text-align: center;
   color: #0D0D0D;
+  --text-color: #7D7D7D;
+  box-sizing: border-box;
 }
 
 img {
@@ -107,8 +109,8 @@ img {
   max-width: 37.5rem;
 }
 
-.hero p {
-  color: #7D7D7D;
+.large-text {
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
@@ -196,7 +198,7 @@ footer {
 }
 
 .services > p {
-  color: #7D7D7D;
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -226,6 +228,48 @@ footer {
   font-size: 3rem;
   height: 4.5rem;
   width: 4.5rem;
+}
+
+.trust-bar {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust-bar-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 44rem;
+}
+
+.trust-bar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.trust-bar-list-item {
+  width: 10rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.trust-bar-icon {
+  height: 3rem;
+  width: 3rem;
+  padding: .5rem;
+  background-color: rgba(154, 197, 236, 0.3);
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
 .values {
@@ -278,7 +322,7 @@ footer {
 }
 
 .quotes-section p {
-  color: #7D7D7D;
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 400;
   max-width: 43.75rem;
