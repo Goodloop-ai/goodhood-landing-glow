@@ -90,8 +90,8 @@ const ServicesSection = () => (
       <ServiceCard
         emoji="🩰"
         title="Dance Class Carpool"
-        subtitle="Tomorrow, 4:00 PM | 4 trusted neighbors available"
-        description="Give rides when you can. Get help when you need."
+        subtitle="Tomorrow, 4:00 PM | 4 trusted care-drivers available"
+        description="Get help when you need."
       />
     </div>
   </section>
