@@ -223,7 +223,7 @@ export default function LandingPage() {
         <HeaderLogo />
         <HeroSection />
         <ServicesSection />
-        <TrustBar />
+        {/* <TrustBar /> */}
         <ValuesSection />
         <QuotesSection />
         <SignupFormSection />
