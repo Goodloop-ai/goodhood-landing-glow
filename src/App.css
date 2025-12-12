@@ -246,12 +246,8 @@ footer {
   padding: 0 2rem;
 }
 
-.trust-bar-list {
-  display: flex;
-  flex-direction: row;
+.trust-bar ul {
   justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
 }
 
 .trust-bar-list-item {
