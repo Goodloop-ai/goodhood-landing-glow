@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "K25XVHP83R.com.goodlooporg.goodloop",
+        "paths": ["/index/*"]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": ["K25XVHP83R.com.goodlooporg.goodloop"]
+  },
+  "webcredentials": {
+    "apps": ["K25XVHP83R.com.goodlooporg.goodloop"]
+  }
+}
