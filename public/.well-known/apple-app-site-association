@@ -1,17 +1,1 @@
-{
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "K25XVHP83R.com.goodlooporg.goodloop",
-        "paths": ["*", "/", "/test"]
-      }
-    ]
-  },
-  "activitycontinuation": {
-    "apps": ["K25XVHP83R.com.goodlooporg.goodloop"]
-  },
-  "webcredentials": {
-    "apps": ["K25XVHP83R.com.goodlooporg.goodloop"]
-  }
-}
+"{\n  \"applinks\": {\n      \"details\": [\n          {\n            \"appIDs\": [ \"K25XVHP83R.com.goodlooporg.goodloop\" ],\n            \"components\": [\n              {\n                \"#\": \"no_universal_links\",\n                \"exclude\": true,\n                \"comment\": \"Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link.\"\n              },\n              {\n                \"/\": \"/app/*\",\n                \"comment\": \"Matches any URL starting with /app.\"\n              }\n            ]\n          }\n      ]\n  },\n  \"webcredentials\": {\n    \"apps\": [ \"K25XVHP83R.com.goodlooporg.goodloop\" ]\n  },\n  \"activitycontinuation\": {\n    \"apps\": [ \"K25XVHP83R.com.goodlooporg.goodloop\" ]\n  }\n}"
