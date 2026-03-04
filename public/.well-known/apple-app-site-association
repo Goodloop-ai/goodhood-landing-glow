@@ -10,8 +10,8 @@
                 "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
               },
               {
-                "/": "/(drawer)/(tabs)/*",
-                "comment": "Matches any URL starting with /(drawer)/(tabs)."
+                "/": "/index/*",
+                "comment": "Matches any URL starting with /index."
               }
             ]
           }
